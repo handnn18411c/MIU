@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSaveDelivery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MauLayout"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_weight="7"
+        android:background="@drawable/border_left"
+        android:backgroundTint="@color/MauLayout"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_h3"
+            android:layout_weight="1"
+            android:background="@drawable/corner_layout"
+            android:backgroundTint="@color/white"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:weightSum="10"/>
+
+        <GridView
+            android:id="@+id/gvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/corner_layout"
+            android:backgroundTint="@color/MauLayout"
+            android:numColumns="5"
+            android:horizontalSpacing="@dimen/spacing_small"
+            android:verticalSpacing="@dimen/spacing_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/border_left"
+        android:backgroundTint="@color/MauLayout"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/lnAddCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_line"
+            android:layout_marginBottom="@dimen/margin_h3"
+            android:layout_weight="1"
+            android:background="@drawable/corner_layout"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_size_h4"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_line"
+                android:layout_weight="2"
+                android:src="@drawable/ava" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_line"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NhatHan"
+                    android:textColor="@color/XanhDuong"
+                    android:textSize="@dimen/text_size_h5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPhoneCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0778098294"
+                    android:textSize="@dimen/text_size_h6" />
+
+                <TextView
+                    android:id="@+id/tvEmailCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nhathansp20@gmail.com"
+                    android:textSize="@dimen/text_size_h6" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgAddCustomer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@null"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_line"
+            android:layout_marginBottom="@dimen/margin_h3"
+            android:layout_weight="3.5"
+            android:background="@drawable/corner_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_line"
+            android:layout_marginBottom="@dimen/margin_h3"
+            android:layout_weight="5.5"
+            android:background="@drawable/corner_layout"
+            android:backgroundTint="@color/MauLayout"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlAddDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/line"
+                    android:background="@drawable/corner_layout"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/pageMargin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Discount"
+                        android:textColor="@color/XanhDuong"
+                        android:textSize="@dimen/text_size_h3"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:layout_width="@dimen/text_size_h3"
+                        android:layout_height="@dimen/text_size_h3"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_plus" />
+                </RelativeLayout>
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rlAddShipment"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/line"-->
+<!--                    android:background="@drawable/corner_layout"-->
+<!--                    android:foreground="?attr/selectableItemBackground"-->
+<!--                    android:padding="@dimen/pageMargin">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Add Shipment"-->
+<!--                        android:textColor="@color/XanhDuong"-->
+<!--                        android:textSize="@dimen/text_size_h3"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:layout_width="@dimen/text_size_h3"-->
+<!--                        android:layout_height="@dimen/text_size_h3"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:background="@null"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/ic_plus" />-->
+<!--                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/line"
+                    android:background="@drawable/corner_layout"
+                    android:padding="@dimen/margin_line">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SubTotal"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/line"
+                    android:background="@drawable/corner_layout"
+                    android:padding="@dimen/margin_line">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/line"
+                    android:background="@drawable/corner_layout"
+                    android:padding="@dimen/margin_line">
+
+                    <TextView
+                        android:id="@+id/tvReceive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+
+                    <TextView
+                        android:id="@+id/tvUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$"
+                        android:textColor="@color/MauChu"
+                        android:textSize="@dimen/text_size_h4" />
+                </RelativeLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/line"-->
+<!--                    android:background="@drawable/corner_layout"-->
+<!--                    android:padding="@dimen/margin_line"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Payment method"-->
+<!--                        android:textColor="@color/MauChu"-->
+<!--                        android:textSize="@dimen/text_size_h4" />-->
+
+<!--                    <RadioGroup-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <RadioButton-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="COD"/>-->
+<!--                        <RadioButton-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Bank Transfer"/>-->
+<!--                    </RadioGroup>-->
+
+
+<!--                </LinearLayout>-->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_margin="@dimen/margin_line"
+                android:layout_weight="1"
+                android:background="@drawable/corner_button"
+                android:text="Save"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

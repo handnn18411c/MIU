@@ -1,0 +1,2 @@
+rootProject.name = "MIU_POS_SYSTEM"
+include ':app'

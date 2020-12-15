@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/icon_size_h3"
+    android:layout_margin="@dimen/line"
+    android:layout_marginLeft="@dimen/spacing_small"
+    android:alpha="1"
+    android:background="@drawable/corner_layout"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/image_size_h4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgCate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size_h4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ava"
+                app:civ_border_color="@color/XanhDuong"
+                app:civ_border_width="@dimen/line" />
+
+            <TextView
+                android:id="@+id/tvCateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Category Name"
+                android:textSize="@dimen/text_size_h4" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

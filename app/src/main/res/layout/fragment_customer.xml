@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:background="#F3F7FD"
+    android:padding="10dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="#52575C"
+    >
+    <TableRow>
+        <TextView
+            android:background="#52575C"
+            android:text=" Search"
+            android:textColor="#FFF"
+            ></TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Customer"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/btn_Add"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_blue"
+            android:text="Add Customer"
+            android:textColor="#FFF"
+            android:layout_column="5"
+            android:textSize="14dp"
+            android:layout_marginRight="16dp"/>
+        <Button
+            android:id="@+id/btn_Help"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:text="Help"
+            android:textColor="#52575C"
+            android:textSize="14dp" />
+    </TableRow>
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/btn_Export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export File"
+            android:layout_marginLeft="50dp"
+            android:textColor="#52575C"
+            android:drawableLeft="@drawable/ic_export"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/btn_Import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import File"
+            android:textColor="#52575C"
+            android:drawableLeft="@drawable/ic_import"
+            android:textSize="14dp" />
+    </TableRow>
+    <TableLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:padding="5dp">
+
+            <TextView
+                android:text="My customer"
+                android:textSize="14dp"
+                android:textColor="#1890FF"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:text="Trading"
+                android:textSize="14dp"
+                android:textColor="#52575C"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:text="Deliveried"
+                android:textSize="14dp"
+                android:textColor="#52575C"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btn_Filter"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                android:text="Filter"
+                android:layout_margin="10dp"
+                android:textColor="#52575C"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_Search"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:text="Search by customer ID, name, email, phone"
+                android:textColor="#52575C"
+                android:textSize="14dp" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/lvCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</TableLayout>

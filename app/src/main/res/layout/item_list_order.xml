@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnAddCustomer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_line"
+    android:layout_marginBottom="@dimen/margin_h3"
+    android:layout_weight="1"
+    android:background="@drawable/corner_layout"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/icon_size_h3"
+        android:layout_weight="2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProductOrder"
+            android:layout_width="@dimen/icon_size_h4"
+            android:layout_height="@dimen/icon_size_h4"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_line"
+            android:src="@drawable/ava" />
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape"
+            android:textSize="10sp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_alignRight="@+id/imgProductOrder"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_line"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tvProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Jacket"
+            android:textSize="@dimen/text_size_h2"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Jacket, size XL"
+            android:textColor="@color/XanhLa"
+            android:textSize="@dimen/text_size_h4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="$ 3.00"
+        android:textColor="@color/redDark"
+        android:textSize="@dimen/text_size_h2" />
+</LinearLayout>

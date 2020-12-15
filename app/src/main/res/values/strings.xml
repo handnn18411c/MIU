@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <!-- Add Customer Dialog -->
+    <string name="customerName">Customer Name<font color="#FB2A2A">*</font></string>
+    <string name="customerID">Customer ID<font color="#FB2A2A">*</font></string>
+    <string name="email">Email</string>
+    <string name="group">Group<font color="#FB2A2A">*</font></string>
+    <string name="phoneNumber">Phone Number<font color="#FB2A2A">*</font></string>
+    <string name="status">Status<font color="#FB2A2A">*</font></string>
+    <string name="note">Note</string>
+    <string name="hintgroup">Select group</string>
+    <string-array name="grouplist">
+        <item>Retail</item>
+        <item>VIP</item>
+    </string-array>
+    <string-array name="statusList">
+        <item>Trading</item>
+        <item>Delivered</item>
+    </string-array>
+
+</resources>
