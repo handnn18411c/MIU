@@ -9,6 +9,7 @@
     <string name="email">Email</string>
     <string name="group">Group<font color="#FB2A2A">*</font></string>
     <string name="phoneNumber">Phone Number<font color="#FB2A2A">*</font></string>
+    <string name="sku">SKU<font color="#FB2A2A">*</font></string>
     <string name="status">Status<font color="#FB2A2A">*</font></string>
     <string name="note">Note</string>
     <string name="hintgroup">Select group</string>

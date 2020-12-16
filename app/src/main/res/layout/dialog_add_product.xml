@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="582dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/corner_layout"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_medium">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add New Customer"
+                android:textAlignment="textStart"
+                android:textColor="@color/XanhDuong"
+                android:textSize="@dimen/text_size_h1"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/MauChu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_h4"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Product ID" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="ProductName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtProductID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+
+                <EditText
+                    android:id="@+id/edtProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/sku" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="PRICE" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="SIZE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtSKU"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+                <EditText
+                    android:id="@+id/edtPRICE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="4"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnGroupSIZE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="3"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/grouplist"
+                    android:padding="@dimen/spacing_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:text="CATEGOROIES" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="7"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:padding="@dimen/spacing_small"
+                    android:layout_weight="3"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="QUANTITY" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="MANUFACTURE" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="STOCK STATUS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtQUANTITY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+                <EditText
+                    android:id="@+id/edtMANUFACTURE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_edittext_corner"
+
+                    android:padding="@dimen/spacing_small" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnGroupSTOCKSTATUS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="3"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/grouplist"
+                    android:padding="@dimen/spacing_small" />
+            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="IMAGE" />
+        <EditText
+            android:id="@+id/edtIMAGE"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:drawableStart="@drawable/ic_import"
+            android:background="@drawable/border_edittext_corner"
+
+            android:padding="@dimen/spacing_small" />
+        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DESCRIPTION" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/edtDescription" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_weight="5"
+                android:background="@drawable/border_edittext_corner"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+
+                android:textColor="@color/black"
+
+                android:id="@+id/btnProdcutCancel"></Button>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Add New"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_weight="5"
+                android:background="@drawable/corner_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+
+                android:textColor="@color/white"
+
+                android:id="@+id/btnProductAdd"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/spacing_small"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="10">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSave"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/spacing_small"-->
+<!--                android:layout_marginRight="@dimen/spacing_small"-->
+<!--                android:layout_weight="5"-->
+<!--                android:background="@drawable/corner_button"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                android:text="Save Customer"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDelete"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/spacing_small"-->
+<!--                android:layout_marginTop="@dimen/spacing_small"-->
+<!--                android:layout_weight="5"-->
+<!--                android:background="@drawable/corner_button"-->
+<!--                android:backgroundTint="@color/redDark"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                android:text="Delete"-->
+<!--                android:textColor="@color/white" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

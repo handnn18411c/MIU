@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="13"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="20dp"
+        android:id="@+id/cbProduct"
+       />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="ProductID"
+        android:textColor="#0040E3"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/tvProductID"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/tvProductName"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/tvCategory"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Created Date"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/tvCreateDate"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:id="@+id/tvQuantity"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:id="@+id/tvPrice"
+
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+
+</LinearLayout>
